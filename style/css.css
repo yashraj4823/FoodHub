@@ -1,0 +1,199 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+:root{
+    --navbar-height:50px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+ 
+}
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+}
+
+#logo{
+    margin: -4px -8px;
+    height: 72px;
+}
+
+#logo img{
+    margin: 9px 15px 4px 22px;
+    height: 56px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    border-radius: 20px;
+    text-decoration: none;
+    padding: 12px 24px;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: " ";
+    background: url('../spaghetti-g375143347_1920.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    height: 50%;
+    width: 100%;
+    opacity: 0.89;
+}
+#home p{
+    font-size: 1.2rem;
+    color: white;
+    font-family: 'Bree Serif', serif;
+
+}
+.h-primary{
+    color: rgb(248, 246, 246);
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-family: 'Bree Serif', serif;
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 5px 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: brown;
+    margin: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.center{
+    color: black;
+    text-align: center;
+}
+
+#services{
+    display: flex;
+    margin: 22px;
+    margin-top: 2px;
+}
+#services .box{
+    border: 2px solid red;
+    background-color: #e4e4e4;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 156px;
+}
+#services .box p{
+    font-family: 'Bree Serif', serif;
+    font-size: 0.9rem;
+}
+
+#client-section{
+   height:340px;
+}
+#client-section::before{
+   content:"";
+   position:absolute;
+   background: url('../pexels-ella-olsson-1640777.jpg');
+   z-index: -1;
+   height: 40%;
+   width: 100%;
+   opacity: 0.5;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients-item{
+    padding: 34px;
+}
+#clients img{
+    height: 150px;
+}
+
+/* foooter section */
+footer{
+    background: black;
+    padding: 9px 20px;
+}
+footer .center{
+    color: red;
+}
+
+/* contact box */
+#contact{
+   position: relative;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    background: url('../contact-us-ga90115813_1920.jpg') no-repeat center center/cover;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+#contact-box{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding-bottom: 30px;
+}
+#contact-box form{
+    width: 30%;
+}
+#contact textarea,#contact input{
+    width: 120%;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+#contact label{
+    font-size: 1.1rem;
+    font-family: 'Bree Serif', serif;
+}
